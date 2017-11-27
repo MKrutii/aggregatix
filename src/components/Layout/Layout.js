@@ -14,6 +14,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 // external-global styles must be imported in your JS.
 import normalizeCss from 'normalize.css';
+import fonts from '../fonts.css';
 import s from './Layout.css';
 import Header from '../Header';
 import Feedback from '../Feedback';
@@ -38,4 +39,4 @@ class Layout extends React.Component {
   }
 }
 
-export default withStyles(normalizeCss, s)(Layout);
+export default withStyles(normalizeCss, fonts, s)(Layout);
